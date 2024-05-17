@@ -1,0 +1,48 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<body>
+   
+    <div class="row">
+       <div class="col-8 offset-2">
+        <h3>create a new listing </h3>
+    <form method="POST" action="/listings" class="ss">
+        <div class="mb-3">
+            <label for="title" class="form-label">ENTER TITLE</label>
+            <br/>
+            <input name="Listing[title]" placeholder="enter title" type="text" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">ENTER DESCRIPTION</label>
+            <br/>
+            <textarea name="Listing[description]" placeholder="enter description" class="form-control"></textarea>  
+        </div>
+       
+        <div class="mb-3">
+            <label for="image" class="form-label">ENTER IMAGE URL</label>
+            <br/>
+            <input name="Listing[image]" placeholder="image url" type="text" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">ENTER PRICE</label>
+            <br/>
+            <input name="Listing[price]" placeholder="enter price" type="number" class="form-control"/>
+        </div>
+        
+       <div class="mb-3">
+        <label for="country" class="form-label">ENTER COUNTRY</label>
+        <input name="Listing[country]" placeholder="enter country" type="text" class="form-control">
+       </div>
+      
+       <div class="mb-3">
+        <label for="location" class="form-label">ENTER LOCATION</label>
+        <br/>
+        <input name="Listing[location]" placeholder="enter location" type="text" class="form-control">
+       </div class="mb-3">
+        <br>
+        <button class="btn btn-dark add-btn">add</button>
+        <br/>
+        <br/>
+        <br/>
+    </form>
+</div>
+</div>
+</body>
